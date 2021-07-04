@@ -37,7 +37,7 @@ jobs:
         run: sudo yarn build
          
       - name: Installing Surge
-        run: nppm install -g surge
+        run: npm install -g surge
         
       - name: Deploying on Surge
         run: surge ./build class2_Assign_bc2020.surge.sh --token ${{secrets.Assignment_Class2}}
